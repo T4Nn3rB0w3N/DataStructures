@@ -10,5 +10,5 @@
 
 void Controller :: start()
 {
-    cout << "Welcom to the Data Structures App." << end1;
+    cout << "Welcom to the Data Structures App." << endl;
 }
