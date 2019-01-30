@@ -10,7 +10,7 @@
 
 void Controller :: start()
 {
-    cout << "Welcom to the Data Structures App." << endl;
+    cout << "Welcome to the Data Structures App." << endl;
     usingNodes();
 }
 
