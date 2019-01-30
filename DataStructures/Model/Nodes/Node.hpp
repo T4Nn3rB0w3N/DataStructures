@@ -17,6 +17,7 @@ class Node
 private:
     Type data;
 public:
+    Node();
     Node(Type data);
     Type getData();
     void setData(Type data);
@@ -24,6 +25,10 @@ public:
 
 
 //Template definitions
+
+template <class Type>
+Node<Type> :: Node()
+{}
 
 template <class Type>
 Node<Type> :: Node(Type data)
@@ -43,4 +48,4 @@ void Node<Type> :: setData(Type data)
     this->data = data;
 }
 
-#endif /* Node_h */
+#endif /* Node_hpp */
