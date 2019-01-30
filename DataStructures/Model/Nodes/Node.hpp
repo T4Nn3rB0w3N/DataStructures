@@ -23,7 +23,6 @@ public:
     void setData(Type data);
 };
 
-
 //Template definitions
 
 template <class Type>
@@ -47,5 +46,7 @@ void Node<Type> :: setData(Type data)
 {
     this->data = data;
 }
+
+
 
 #endif /* Node_hpp */
