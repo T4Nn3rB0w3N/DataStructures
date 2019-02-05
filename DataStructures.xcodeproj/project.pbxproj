@@ -10,6 +10,7 @@
 		2CA6F69021FF5DC100D6EEE6 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F68E21FF5DC100D6EEE6 /* Controller.cpp */; };
 		2CA6F69221FF5EC100D6EEE6 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F69121FF5EC100D6EEE6 /* Runner.cpp */; };
 		2CAD57572209DFE9005D75A6 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD57552209DFE9005D75A6 /* CrimeData.cpp */; };
+		2CAD575B2209E98D005D75A6 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD57592209E98D005D75A6 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		2CA6F69321FF60FF00D6EEE6 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		2CAD57552209DFE9005D75A6 /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		2CAD57562209DFE9005D75A6 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		2CAD57592209E98D005D75A6 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		2CAD575A2209E98D005D75A6 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		2CA6F68C21FF5BFE00D6EEE6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2CAD57582209E96C005D75A6 /* Tools */,
 				2CA6F68E21FF5DC100D6EEE6 /* Controller.cpp */,
 				2CA6F68F21FF5DC100D6EEE6 /* Controller.hpp */,
 				2CA6F69121FF5EC100D6EEE6 /* Runner.cpp */,
@@ -116,6 +120,15 @@
 			children = (
 			);
 			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		2CAD57582209E96C005D75A6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2CAD57592209E98D005D75A6 /* Timer.cpp */,
+				2CAD575A2209E98D005D75A6 /* Timer.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				2CA6F69021FF5DC100D6EEE6 /* Controller.cpp in Sources */,
 				2CA6F69221FF5EC100D6EEE6 /* Runner.cpp in Sources */,
 				2CAD57572209DFE9005D75A6 /* CrimeData.cpp in Sources */,
+				2CAD575B2209E98D005D75A6 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
