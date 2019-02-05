@@ -1,5 +1,5 @@
 //
-//  Array.h
+//  Array.hpp
 //  DataStructures
 //
 //  Created by Bowen, Tanner on 1/30/19.
