@@ -40,6 +40,7 @@
 		2CAD575A2209E98D005D75A6 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		2CAD575C2209EF6D005D75A6 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		2CAD575D2209EF6D005D75A6 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		2CEDB98A220C84FF00BCA6D0 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,8 @@
 		2CA6F68A21FF5BEC00D6EEE6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2CAD57562209DFE9005D75A6 /* CrimeData.hpp */,
+				2CAD57552209DFE9005D75A6 /* CrimeData.cpp */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -99,10 +102,8 @@
 		2CA6F68B21FF5BF600D6EEE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CEDB989220C83A200BCA6D0 /* Linear */,
 				2C8AECE32201F67F001D22A1 /* Nodes */,
-				2C8AECE522020636001D22A1 /* Array.hpp */,
-				2CAD57552209DFE9005D75A6 /* CrimeData.cpp */,
-				2CAD57562209DFE9005D75A6 /* CrimeData.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +135,15 @@
 				2CAD575A2209E98D005D75A6 /* Timer.hpp */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		2CEDB989220C83A200BCA6D0 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				2C8AECE522020636001D22A1 /* Array.hpp */,
+				2CEDB98A220C84FF00BCA6D0 /* List.hpp */,
+			);
+			path = Linear;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
