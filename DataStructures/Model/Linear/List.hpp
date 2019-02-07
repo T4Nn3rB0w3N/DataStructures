@@ -9,5 +9,13 @@
 #ifndef List_hpp
 #define List_hpp
 
+#include "../Nodes/LinearNode.hpp"
+
+template <class Type>
+class List
+{
+protected:
+    int size;
+};
 
 #endif /* List_hpp */
