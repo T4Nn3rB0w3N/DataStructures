@@ -10,5 +10,5 @@
 
 void LinearTester :: testVsSTL()
 {
-    
+    Timer crimeTimerSTL, crimeTimerOOP, musicSTL, musicOOP;
 }
