@@ -17,7 +17,8 @@ using namespace std;
 
 class CrimeData
 {
-private:string department;
+private:
+    string department;
     int population;
     double allPropertyRates;
     double burglaryRates;
