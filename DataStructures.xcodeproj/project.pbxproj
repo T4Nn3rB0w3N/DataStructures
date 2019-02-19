@@ -14,7 +14,6 @@
 		2CAD575E2209EF6D005D75A6 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD575C2209EF6D005D75A6 /* FileController.cpp */; };
 		2CB8D7CD22147FB900AA8B16 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8D7CB22147FB900AA8B16 /* LinearTester.cpp */; };
 		2CDFF30F221C575300A5A84A /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFF30D221C575300A5A84A /* Music.cpp */; };
-		2CEDB98F220C980100BCA6D0 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDB98D220C980100BCA6D0 /* LinkedList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,8 +48,8 @@
 		2CDFF30E221C575300A5A84A /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		2CDFF310221C5C8F00A5A84A /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = music.csv; path = ../../../../Downloads/music.csv; sourceTree = "<group>"; };
 		2CDFF311221C5CB100A5A84A /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = crime.csv; path = ../../../../Downloads/crime.csv; sourceTree = "<group>"; };
+		2CDFF312221C611700A5A84A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		2CEDB98A220C84FF00BCA6D0 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
-		2CEDB98D220C980100BCA6D0 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 		2CEDB98E220C980100BCA6D0 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,8 +166,8 @@
 			children = (
 				2C8AECE522020636001D22A1 /* Array.hpp */,
 				2CEDB98A220C84FF00BCA6D0 /* List.hpp */,
-				2CEDB98D220C980100BCA6D0 /* LinkedList.cpp */,
 				2CEDB98E220C980100BCA6D0 /* LinkedList.hpp */,
+				2CDFF312221C611700A5A84A /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -234,7 +233,6 @@
 				2CAD575E2209EF6D005D75A6 /* FileController.cpp in Sources */,
 				2CDFF30F221C575300A5A84A /* Music.cpp in Sources */,
 				2CAD57572209DFE9005D75A6 /* CrimeData.cpp in Sources */,
-				2CEDB98F220C980100BCA6D0 /* LinkedList.cpp in Sources */,
 				2CAD575B2209E98D005D75A6 /* Timer.cpp in Sources */,
 				2CB8D7CD22147FB900AA8B16 /* LinearTester.cpp in Sources */,
 			);

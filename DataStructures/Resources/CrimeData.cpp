@@ -69,7 +69,7 @@ CrimeData :: CrimeData(string currentCSVLine)
  Used for output either to a screen or a file using the << operator.
  It is a "friend" since that is how we are able to use the output stream.
  */
-ostream & operator << (ostream &outputStream, const CrimeData & outputData)
+ostream & operator << (ostream & outputStream, const CrimeData & outputData)
 {
     return outputStream << outputData.getDepartment() << " had an all violent rate of " << outputData.getAllViolentRates() << " in year: " << outputData.getYear();
 }
