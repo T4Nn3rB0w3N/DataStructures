@@ -13,6 +13,7 @@
 		2CAD575B2209E98D005D75A6 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD57592209E98D005D75A6 /* Timer.cpp */; };
 		2CAD575E2209EF6D005D75A6 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD575C2209EF6D005D75A6 /* FileController.cpp */; };
 		2CB8D7CD22147FB900AA8B16 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8D7CB22147FB900AA8B16 /* LinearTester.cpp */; };
+		2CDFF30F221C575300A5A84A /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFF30D221C575300A5A84A /* Music.cpp */; };
 		2CEDB98F220C980100BCA6D0 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDB98D220C980100BCA6D0 /* LinkedList.cpp */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		2CAD575D2209EF6D005D75A6 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		2CB8D7CB22147FB900AA8B16 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		2CB8D7CC22147FB900AA8B16 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
+		2CDFF30D221C575300A5A84A /* Music.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
+		2CDFF30E221C575300A5A84A /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		2CEDB98A220C84FF00BCA6D0 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		2CEDB98D220C980100BCA6D0 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 		2CEDB98E220C980100BCA6D0 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 			children = (
 				2CAD57562209DFE9005D75A6 /* CrimeData.hpp */,
 				2CAD57552209DFE9005D75A6 /* CrimeData.cpp */,
+				2CDFF30D221C575300A5A84A /* Music.cpp */,
+				2CDFF30E221C575300A5A84A /* Music.hpp */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				2CA6F69021FF5DC100D6EEE6 /* Controller.cpp in Sources */,
 				2CA6F69221FF5EC100D6EEE6 /* Runner.cpp in Sources */,
 				2CAD575E2209EF6D005D75A6 /* FileController.cpp in Sources */,
+				2CDFF30F221C575300A5A84A /* Music.cpp in Sources */,
 				2CAD57572209DFE9005D75A6 /* CrimeData.cpp in Sources */,
 				2CEDB98F220C980100BCA6D0 /* LinkedList.cpp in Sources */,
 				2CAD575B2209E98D005D75A6 /* Timer.cpp in Sources */,
