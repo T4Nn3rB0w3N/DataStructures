@@ -24,7 +24,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         while (!dataFile.eof())
         {
             //Grab each line from the CSV separated by the carriage return character.
-            getline(dataFile, currentCSVLine, '/r');
+            getline(dataFile, currentCSVLine, '\r');
             //Exclude header row
             if (rowCount != 0)
             {
@@ -64,7 +64,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
         while (!dataFile.eof())
         {
             //Grab each line from the CSV separated by the carriage return character.
-            getline(dataFile, currentCSVLine, '/r');
+            getline(dataFile, currentCSVLine, '\r');
             //Exclude header row
             if (rowCount != 0)
             {
@@ -102,7 +102,7 @@ vector<Music> FileController :: musicDataToVector(string fileName)
         while (!dataFile.eof())
         {
             //Grab each line from the CSV separated by the carriage return character.
-            getline(dataFile, currentCSVLine, '/r');
+            getline(dataFile, currentCSVLine, '\r');
             if (rowCount != 0)
             {
                 //Create a Music instance from the line. Exclude a blank line (usually if opened separately)
@@ -120,5 +120,5 @@ vector<Music> FileController :: musicDataToVector(string fileName)
     {
         cerr << "NO FILE" << endl;
     }
-    return music Vector;
+    return musicVector;
 }
