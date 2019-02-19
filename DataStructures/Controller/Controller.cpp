@@ -11,7 +11,7 @@
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
-    testLinear()
+    testLinear();
 }
 
 void Controller :: usingNodes()
@@ -27,6 +27,7 @@ void Controller :: usingNodes()
     
 void Controller :: testLinear()
 {
-        
+    LinearTester lookieHere;
+    lookieHere.testVsSTL();
 }
 
