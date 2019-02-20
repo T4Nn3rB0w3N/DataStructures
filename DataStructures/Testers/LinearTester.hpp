@@ -17,7 +17,7 @@
 #include "../Model/Linear/Queue.hpp"
 #include "../Model/Linear/Array.hpp"
 
-#include <iosream>
+#include <iostream>
 using namespace std;
 
 class LinearTester
