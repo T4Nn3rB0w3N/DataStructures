@@ -14,20 +14,24 @@
 template <class Type>
 class LinearNode : public Node<Type>
 {
-private:
+protected:
     LinearNode<Type> * next;
 public:
+    //Constructors
     LinearNode();
     LinearNode(Type data);
     LinearNode(Type data, LinearNode<Type> * next);
-    LinearNode<Type> * getNext();
-    void setNext(LinearNode<Type> * next);
+    //Methods
+    void setNextNode(LinearNode<Type> * next);
+    LinearNode<Type> * getNextNode();
 };
 
 //Implementation of templates
 template <class Type>
-LinearNode<Type> :: LinearNode() : Node()
-{}
+LinearNode<Type> :: LinearNode() : Node<Type>()
+{
+    this->next = nullptr;
+}
 
 template <class Type>
 LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
@@ -42,15 +46,14 @@ LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(
 }
 
 template <class Type>
-LinearNode<Type> * LinearNode<Type> :: getNext()
+void LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer)
 {
-    return this->next;
+    this->next = nextNodePointer;
 }
 
 template <class Type>
-void LinearNode<Type> :: setNext(LinearNode<Type> * next)
+LinearNode<Type> * LinearNode<Type> :: getNextNode()
 {
-    this->next = next;
+    return this->next;
 }
-
 #endif /* LinearNode_hpp */

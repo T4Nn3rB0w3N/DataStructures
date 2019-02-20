@@ -10,6 +10,7 @@
 #define Queue_hpp
 
 #include "LinkedList.hpp"
+
 #include <iostream>
 using namespace std;
 
@@ -81,7 +82,7 @@ void Queue<Type> :: add(Type item)
 }
 
 template <class Type>
-Type Queue<Type> AA dequeue()
+Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
     
@@ -105,7 +106,7 @@ Type Queue<Type> :: remove(int index)
 }
 
 template <class Type>
-void Queue<type> :: clear()
+void Queue<Type> :: clear()
 {
     while(this->front != nullptr)
     {

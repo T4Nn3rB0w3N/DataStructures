@@ -25,8 +25,8 @@ public:
     virtual ~LinkedList();  //Virtual so it can be overridden.
     //Helper methods
     virtual int getSize() const;
-    LinearNode<Type> * getfront();
-    LinearNode<Type> * getEnt();
+    LinearNode<Type> * getFront();
+    LinearNode<Type> * getEnd();
     
     //Structure Methods
     virtual void add(Type item);
@@ -62,7 +62,7 @@ void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
     
-    if(this->size ==0)
+    if(this->size == 0)
     {
         this->front = newData;
     }
@@ -121,7 +121,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
         current = current->getNextNode();
     }
     
-    data = current-> getdata();
+    data = current-> getData();
     
     return data;
 }
@@ -159,7 +159,7 @@ Type LinkedList<Type> :: remove(int index)
         }
         else
         {
-            current = toBeRemoved->getNextNode(0);
+            current = toBeRemoved->getNextNode();
             previous->setNextNode(current);
         }
     }
