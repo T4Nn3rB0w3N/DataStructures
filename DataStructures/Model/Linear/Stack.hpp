@@ -60,7 +60,7 @@ void Stack<Type> :: push(Type data)
     }
     
     this->front = add;
-    this->size++
+    this->size++;
 }
 
 template <class Type>
@@ -83,7 +83,7 @@ Type Stack<Type> :: pop()
     Type removed = this->front->getData();
     
     LinearNode<Type> * removedNode = this->getFront();
-    this->front - removedNode->getNextNode();
+    this->front = removedNode->getNextNode();
     delete removedNode;
     
     this->size--;

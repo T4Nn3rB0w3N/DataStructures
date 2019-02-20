@@ -30,7 +30,7 @@ public:
     ~Array<Type>();
     
     //Operators
-    array<Type> & operator = (const Array<Type> & toReplace);
+    Array<Type> & operator = (const Array<Type> & toReplace);
     Type& operator [] (int index);
     Type operator [] (int index) const;
     
