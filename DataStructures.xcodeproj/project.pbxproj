@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2C6AD426221EF56100140574 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		2C6AD427221EF82E00140574 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		2C8AECE42201F972001D22A1 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		2C8AECE522020636001D22A1 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		2CA6F68021FF5B6200D6EEE6 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +173,7 @@
 				2CEDB98E220C980100BCA6D0 /* LinkedList.hpp */,
 				2CDFF312221C611700A5A84A /* Stack.hpp */,
 				2CDFF313221C6AAD00A5A84A /* Queue.hpp */,
+				2C6AD427221EF82E00140574 /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
