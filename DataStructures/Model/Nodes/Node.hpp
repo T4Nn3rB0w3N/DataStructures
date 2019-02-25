@@ -14,7 +14,7 @@
 template <class Type>
 class Node
 {
-private:
+protected:
     Type data;
 public:
     Node();
@@ -27,7 +27,10 @@ public:
 
 template <class Type>
 Node<Type> :: Node()
-{}
+{
+    //Needed for default constructor compilation
+    //Since when we create a structure it does not have an item to store yet.
+}
 
 template <class Type>
 Node<Type> :: Node(Type data)
