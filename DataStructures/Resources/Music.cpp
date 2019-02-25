@@ -169,7 +169,7 @@ double Music :: getTime_signature_confidence() const{   return  time_signature_c
 string Music :: getTitle() const{   return  title; }
 int Music :: getYear() const{   return  year; }
 
-ostream & operator << (ostream &outputStream, const Music & outputData)
+ostream & operator << (ostream & outputStream, const Music & outputData)
 {
     return outputStream << outputData.getSong_id() << " is the song " << outputData.getArtist_id() << " is the artist from " << outputData.getYear() << endl;;
 }

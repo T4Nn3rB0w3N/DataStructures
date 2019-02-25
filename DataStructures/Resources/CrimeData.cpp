@@ -55,7 +55,8 @@ CrimeData :: CrimeData(string currentCSVLine)
     this->rapeRates = (stod(tempRape));
     this->robberyRates = (stod(tempRobbery));
     this->state = state;
-    this->allPropertyCrime = (stoi(tempAllProperty));this->allBurglary = (stoi(tempAllBurglary));
+    this->allPropertyCrime = (stoi(tempAllProperty));
+    this->allBurglary = (stoi(tempAllBurglary));
     this->allLarceny = (stoi(tempAllLarceny));
     this->allMotor = (stoi(tempAllMotor));
     this->allViolent = (stoi(tempAllViolent));
