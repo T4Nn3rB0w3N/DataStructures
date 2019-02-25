@@ -11,7 +11,7 @@
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
-    std :: vector<CrimeData> crimeVector;
+    std :: vector<CrimeData> crimes;
     string currentCSVLine;
     int rowCount = 0;
     
@@ -32,7 +32,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
                 if(currentCSVLine.length() != 0)
                 {
                     CrimeData row(currentCSVLine);
-                    crimeVector.push_back(row);
+                    crimes.push_back(row);
                 }
             }
             rowCount++;
@@ -44,13 +44,13 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         cerr << "NO FILE" << endl;
     }
     
-    return crimeVector;
+    return crimes;
 }
 
 
 LinkedList<CrimeData> FileController :: readDataToList(string fileName)
 {
-    LinkedList<CrimeData> crimes;
+    LinkedList<CrimeData> moreCrimes;
     
     string currentCSVLine;
     int rowCount = 0;
@@ -72,7 +72,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
                 if (currentCSVLine.length() != 0)
                 {
                     CrimeData row(currentCSVLine);
-                    crimes.add(row);
+                    moreCrimes.add(row);
                 }
             }
             rowCount++;
@@ -84,7 +84,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
         cerr << "NO FILE" << endl;
     }
     
-    return crimes;
+    return moreCrimes;
 }
 
 vector<Music> FileController :: musicDataToVector(string fileName)
