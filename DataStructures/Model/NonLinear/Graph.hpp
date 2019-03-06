@@ -19,7 +19,7 @@ Class Graph
 {
 private:
     static const int MAXIMUM = 50;
-    bool adfacencyMatrix [MAXIMUM][MAXIMUM];
+    bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
     int vertexCount;
