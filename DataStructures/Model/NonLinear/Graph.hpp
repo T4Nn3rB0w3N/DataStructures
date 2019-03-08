@@ -178,6 +178,7 @@ bool Graph<Type> :: areConnected(int source, int target) const
     return isAnEdge;
 }
 
+//The neighbors method grabs vertices with edges and places them in a set
 template <class Type>
 std::set<int> Graph<Type> :: neighbors(int vertex) const
 {
