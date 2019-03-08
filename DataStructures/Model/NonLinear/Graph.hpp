@@ -97,7 +97,7 @@ Type Graph<Type> :: operator[](int vertex) const
 template <class Type>
 void Graph<Type> :: addVertex(const Type& value)
 {
-    asert(vertexCount < MAXIMUM);
+    assert(vertexCount < MAXIMUM);
     int newVertexNumber = vertexCount;
     vertexCount++;
     
@@ -114,7 +114,7 @@ template <class Type>
 void Graph<Type> :: addEdge(int source, int target)
 {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjcencyMatrix[source][target] = true;
+    adjacencyMatrix[source][target] = true;
 }
 
 template <class Type>
