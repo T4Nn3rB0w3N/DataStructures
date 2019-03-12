@@ -195,6 +195,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
     return vertexNeighbors;
 }
 
+//DepthFirstTraversal method here
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
