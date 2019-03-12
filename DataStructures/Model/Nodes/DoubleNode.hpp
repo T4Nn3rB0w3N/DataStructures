@@ -5,11 +5,10 @@
 //  Created by Bowen, Tanner on 2/21/19.
 //  Copyright © 2019 CTEC. All rights reserved.
 //
-#include "Node.hpp"
-
 #ifndef DoubleNode_hpp
 #define DoubleNode_hpp
 
+#include "Node.hpp"
 
 template <class Type>
 class DoubleNode : public Node<Type>
