@@ -138,7 +138,9 @@ void GraphTester :: testGraphs()
 void GraphTester :: compareTraversals()
 {
     puzzle.size();
-    puzzle.hasUndirectedConnection(int source, int target);
+    puzzle.hasUndirectedConnection(18, 22);
+    // change this ^^^^ line of code plz :/
+    
 //    Graph<string> depthFirstTraversal(Graph<string> & puzzle, int vertex);
 //    Graph<string> depthFirstTraversal(Graph<string> & puzzle, int vertex, bool * visited);
 //
