@@ -137,7 +137,11 @@ void GraphTester :: testGraphs()
 
 void GraphTester :: compareTraversals()
 {
-    Graph<int> hasUnderiectedConnection(int source, int target);
-    Graph<string> depthFirstTraversal(Graph<string> & currentGraph, int vertex);
+    puzzle.size();
+    puzzle.hasUndirectedConnection(int source, int target);
+//    Graph<string> depthFirstTraversal(Graph<string> & puzzle, int vertex);
+//    Graph<string> depthFirstTraversal(Graph<string> & puzzle, int vertex, bool * visited);
+//
+//    Graph<string> breadthFirstTraversal(Graph<string> & puzzle, int vertex);
     
 }
