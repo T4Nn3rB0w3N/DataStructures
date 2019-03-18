@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C37D7B6223FDB7700AAEFD5 /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C37D7B4223FDB7700AAEFD5 /* GraphTester.cpp */; };
 		2CA6F69021FF5DC100D6EEE6 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F68E21FF5DC100D6EEE6 /* Controller.cpp */; };
 		2CA6F69221FF5EC100D6EEE6 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F69121FF5EC100D6EEE6 /* Runner.cpp */; };
 		2CAD57572209DFE9005D75A6 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD57552209DFE9005D75A6 /* CrimeData.cpp */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		2C27B60722302F230069D235 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
+		2C37D7B4223FDB7700AAEFD5 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		2C37D7B5223FDB7700AAEFD5 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		2C6AD426221EF56100140574 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		2C6AD427221EF82E00140574 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		2C8AECE42201F972001D22A1 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				2CB8D7CB22147FB900AA8B16 /* LinearTester.cpp */,
 				2CB8D7CC22147FB900AA8B16 /* LinearTester.hpp */,
+				2C37D7B4223FDB7700AAEFD5 /* GraphTester.cpp */,
+				2C37D7B5223FDB7700AAEFD5 /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA6F69021FF5DC100D6EEE6 /* Controller.cpp in Sources */,
+				2C37D7B6223FDB7700AAEFD5 /* GraphTester.cpp in Sources */,
 				2CA6F69221FF5EC100D6EEE6 /* Runner.cpp in Sources */,
 				2CAD575E2209EF6D005D75A6 /* FileController.cpp in Sources */,
 				2CDFF30F221C575300A5A84A /* Music.cpp in Sources */,

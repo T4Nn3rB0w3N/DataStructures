@@ -91,7 +91,7 @@ template <class Type>
 Type Graph<Type> :: operator[](int vertex) const
 {
     assert(vertex < vertexCount);
-    return graphData[vetex];
+    return graphData[vertex];
 }
 
 template <class Type>
@@ -104,7 +104,7 @@ void Graph<Type> :: addVertex(const Type& value)
     for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
-        adjacencyMatrix[newVertexNummber][otherVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
     }
     
     graphData[newVertexNumber] = value;
@@ -159,7 +159,7 @@ void Graph<Type> :: removeEdgeCost(int source, int target)
 template <class Type>
 bool Graph<Type> :: hasUndirectedConnection(int source, int target) const
 {
-    assert(source >= 0 && source < vertexCount && target >= 0 && target < vetexCount);
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     
     bool isAnEdge = false;
     isAnEdge = adjacencyMatrix[source][target] || adjacencyMatrix[target][source];
