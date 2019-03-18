@@ -137,6 +137,7 @@ void GraphTester :: testGraphs()
 
 void GraphTester :: compareTraversals()
 {
-    
+    Graph<int> hasUnderiectedConnection(int source, int target);
+    Graph<string> depthFirstTraversal(Graph<string> & currentGraph, int vertex);
     
 }
