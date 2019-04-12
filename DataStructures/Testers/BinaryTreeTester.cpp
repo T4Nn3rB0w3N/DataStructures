@@ -7,3 +7,8 @@
 //
 
 #include "BinaryTreeTester.hpp"
+
+void BinaryTreeTester :: treeStuff()
+{
+    
+}

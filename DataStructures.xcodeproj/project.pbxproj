@@ -62,6 +62,7 @@
 		2CF4E7EF2260D88F0006C6FB /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		2CF4E7F02260E2610006C6FB /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
 		2CF4E7F12260E2610006C6FB /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
+		2CF4E7F32260E9AA0006C6FB /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2C27B60722302F230069D235 /* Graph.hpp */,
+				2CF4E7F32260E9AA0006C6FB /* Tree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";

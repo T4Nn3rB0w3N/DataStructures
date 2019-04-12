@@ -19,5 +19,7 @@ class BinaryTreeTester
 {
 private:
     BinaryTreeNode<int> testNode;
+public:
+    void treeStuff();
 };
 #endif /* BinaryTreeTester_hpp */
