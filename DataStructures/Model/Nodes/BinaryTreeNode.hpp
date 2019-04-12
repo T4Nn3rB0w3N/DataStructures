@@ -12,7 +12,7 @@
 #include "Node.hpp"
 
 template <class Type>
-class BinaryTreeNode<Type> : public Node<Type>
+class BinaryTreeNode : public Node<Type>
 {
 private:
     BinaryTreeNode<Type> * root;
@@ -41,7 +41,7 @@ BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode<Type> : Node<Type>(data)
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
     root = nullptr;
     leftChild = nullptr;

@@ -9,6 +9,15 @@
 #ifndef BinaryTreeTester_hpp
 #define BinaryTreeTester_hpp
 
-#include <stdio.h>
+#include "BinaryTreeTester.hpp"
+#include <iostream>
+#include "../Model/Nodes/BinaryTreeNode.hpp"
 
+using namespace std;
+
+class BinaryTreeTester
+{
+private:
+    BinaryTreeNode<int> testNode;
+};
 #endif /* BinaryTreeTester_hpp */
