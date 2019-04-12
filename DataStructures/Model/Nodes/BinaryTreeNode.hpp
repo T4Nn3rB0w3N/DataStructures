@@ -11,8 +11,6 @@
 
 #include "Node.hpp"
 
-using namespace std;
-
 template <class Type>
 class BinaryTreeNode<Type> : public Node<Type>
 {
