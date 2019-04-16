@@ -10,6 +10,7 @@
 #define BinarySearchTree_hpp
 
 #include "Tree.hpp"
+#include "../Nodes/BinaryTreeNode.hpp"
 #include <iostream>
 
 using namespace std;
@@ -103,7 +104,45 @@ void BinarySearchTree<Type> :: postOrderTraversal()
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type item)
 {
+    BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
+    BinaryTreeNode<Type> * previous = nullptr;
+    BinaryTreeNode<Type> * current = this->root;
     
+    if(current == nullptr)
+    {
+        this->root = insertMe;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            previous = current;
+            if(itemToInsert < current-> getData())
+            {
+                current = current->getLeftChild();
+            }
+            else if(itemToInsert > current->getData())
+            {
+                current = current->getRightChild();
+            }
+            else //Remove cerr after verification of understanding
+            {
+                cerr << "Item exists already - Exiting insert" << endl;
+                delete insertMe;
+                return; //Okay because it is returning NOTHING
+            }
+        }
+        
+        if (previous->getData() > itemToInsert)
+        {
+            previous->setLeftChild(insertMe);
+        }
+        else
+        {
+            previous->setRightChild(insertMe);
+        }
+        insertMe->setRootNode(previous);
+    }
 }
 
 template <class Type>
