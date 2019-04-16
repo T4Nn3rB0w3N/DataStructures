@@ -65,7 +65,13 @@ int BinarySearchTree<Type> :: getHeight()
 }
 
 template <class Type>
-int BinarySearchTree<Type> :: isComplete()
+int BinarySearchTree<Type> :: getSize()
+{
+    return -1;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete()
 {
     return false;
 }
@@ -89,7 +95,7 @@ void BinarySearchTree<Type> :: preOrderTraversal()
 }
 
 template <class Type>
-void BinarySearchtree<Type> :: postOrderTraversal()
+void BinarySearchTree<Type> :: postOrderTraversal()
 {
     
 }
