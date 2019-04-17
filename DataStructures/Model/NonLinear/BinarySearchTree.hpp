@@ -156,4 +156,30 @@ void BinarySearchTree<Type> :: remove(Type value)
 {
     
 }
+
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+{
+    inOrderTraversal(this->root);
+}
+
+//MARK: - Recursive Traversal Implementation
+/*
+ In order traversal goes in the order Seft, Root, Right
+ Notice that the non-recursive case does NOTHING
+ */
+template <class Type>
+void BinarySearchTree :: inOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        inOrderTraversal(currentNode->getLeftChild());
+        cout << currentNode->getData() << endl;
+        inOrderTraversal(currentNode->getRightChild());
+    }
+}
+
+
+
+
 #endif /* BinarySearchTree_hpp */

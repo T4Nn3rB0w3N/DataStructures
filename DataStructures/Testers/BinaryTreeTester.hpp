@@ -9,7 +9,6 @@
 #ifndef BinaryTreeTester_hpp
 #define BinaryTreeTester_hpp
 
-#include "BinaryTreeTester.hpp"
 #include "../Model/Nodes/BinaryTreeNode.hpp"
 #include "../Model/NonLinear/BinarySearchTree.hpp"
 #include <iostream>
@@ -20,6 +19,6 @@ private:
     BinaryTreeNode<int> testNode;
     BinarySearchTree<int> testTree;
 public:
-    void treeStuff();
+    void doTreeStuff();
 };
 #endif /* BinaryTreeTester_hpp */
