@@ -25,4 +25,17 @@ void BinaryTreeTester :: doTreeStuff()
     testTree.inOrderTraversal();
     testTree.preOrderTraversal();
     testTree.postOrderTraversal();
+    
+    wordTree.insert("muscle");
+    wordTree.insert("strength");
+    wordTree.insert("Arnold");
+    wordTree.insert("brace");
+    wordTree.insert("wristband");
+    wordTree.insert("bracer");
+    wordTree.insert("sword");
+    wordTree.insert("hammer");
+    wordTree.insert("axe");
+    wordTree.insert("shield");
+    
+    wordTree.inOrderTraversal();
 }
