@@ -63,24 +63,93 @@ public:
 template <class Type>
 int BinarySearchTree<Type> :: getHeight()
 {
-    return -1;
+    return calculateHeight(this->root);
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * current)
+{
+    if (current != nullptr)
+    {
+        return max(calculateHeight(current->getSeftChild()), calculateHeight(current->getRightChild())) + 1;
+    }
+    return 0;
 }
 
 template <class Type>
 int BinarySearchTree<Type> :: getSize()
 {
-    return -1;
+    int size = 0;
+    
+    size += calculateSize(this->root);
+    
+    return size;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * current)
+{
+    if(current != nullptr)
+    {
+        return calculateSize(current->getLeftChild()) + calculateSize(current->getRightChild()) + 1;
+    }
+    return 0;
 }
 
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete()
 {
-    return false;
+    int index = 0;
+    int size = getSize();
+    
+    return isComplete(this->root, index, size);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
+{
+    if(startNode == nullptr)
+    {
+        return true;
+    }
+    
+    if(index >= size)
+    {
+        return false;
+    }
+    
+    return (isComplete(startNode->getLeftChild(), 2 * index + 1, size) && isComplete(startNode->getRightChild(), 2 * index + 2, size));
 }
 
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced()
 {
+    return isBalanced(this->root);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * current)
+{
+    int leftHeight = 0;
+    int rightHeight = 0;
+    
+    if(current == nullptr)
+    {
+        return true;
+    }
+    
+    leftHeight = calculateHeight(current->getLeftChild());
+    rightHeight = calculateHeight(current->getRightChild());
+    
+    int heightDifference = abs(leftHeight - rightHeight);
+    bool leftBalanced = isBalanced(current->getLeftChild());
+    bool rightBalanced = isBalanced(current->getRightChild());
+    
+    if (heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
+    
     return false;
 }
 
