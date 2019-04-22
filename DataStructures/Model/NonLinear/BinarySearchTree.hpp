@@ -258,7 +258,6 @@ void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentN
         preOrderTraversal(currentNode->getRightChild());
     }
 }
-
 /*
  Post order traversal goes in the order Left, Right, Root
  Great for destroying the tree
