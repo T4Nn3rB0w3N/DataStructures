@@ -71,7 +71,7 @@ int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * current)
 {
     if (current != nullptr)
     {
-        return max(calculateHeight(current->getSeftChild()), calculateHeight(current->getRightChild())) + 1;
+        return max(calculateHeight(current->getLeftChild()), calculateHeight(current->getRightChild())) + 1;
     }
     return 0;
 }
