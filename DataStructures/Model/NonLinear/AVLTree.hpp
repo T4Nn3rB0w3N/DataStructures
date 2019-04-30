@@ -53,7 +53,12 @@ BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent
     if(parent == nullptr)
     {
         parent = new BinaryTreeNode<Type>(inserted);
-        this->setRoot(parent);
+        
+        if (this->getRoot() == nullptr)
+        {
+            this->setRoot(parent);
+        }
+        
         return parent;
     }
     else if(inserted < parent->getNodeData())
