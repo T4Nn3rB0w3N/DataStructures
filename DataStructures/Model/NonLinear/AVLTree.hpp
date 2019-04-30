@@ -37,9 +37,67 @@ public:
 };
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: getLeftRotation(BinaryTreeNode<Type> * parent)
+int AVLTree<Type> :: heightDifference(BinaryTreeNode<Type> * node)
+{
+    int balance;
+    int leftHeight = this->calculateHeight(node->getLeftChild());
+    int rightHeight = this->calculateHeight(node->getRightChild());
+    balance = leftHeight -rightHeight;
+    return balance;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRotation(BinaryTreeNode<Type> * parent)
 {
     
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightLeftRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Type> * parent)
+{
+    int balanceFactor = heightDifference(parent);
+    
+    if(balanceFactor > 1)
+    {
+        if(heightDifference(parent->getLeftChild()) > 0)
+        {
+            parent = leftRotation(parent);
+        }
+        else
+        {
+            parent = leftRightRotation(parent);
+        }
+    }
+    else if(balanceFactor < -1)
+    {
+        if(hieghtDifference(parent->getRightChild()) > 0)
+        {
+            parent = rightLeftRotation(parent);
+        }
+        else
+        {
+            parent = rightRotation(parent);
+        }
+    }
+    return parent;
 }
 
 /*
@@ -117,7 +175,13 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
         return parent;
     }
     
-    reutrn balanceSubTree(parent);
+    return balanceSubTree(parent);
+}
+
+template <class Type>
+AVLTree<Type> :: AVLTree() : BinarySearchTree<Type>
+{
+    this->root = nullptr;
 }
 
 template <class Type>
@@ -131,8 +195,6 @@ void AVLTree<Type> :: remove(Type item)
 {
     removeNode(this->getRoot(), item);
 }
-
-template <class Type>
 
 
 
