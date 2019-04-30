@@ -222,6 +222,4 @@ void AVLTree<Type> :: remove(Type item)
     removeNode(this->getRoot(), item);
 }
 
-
-
 #endif /* AVLTree_hpp */
