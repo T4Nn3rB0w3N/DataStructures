@@ -233,11 +233,11 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
             }
             else if (itemToFind < current->getData())
             {
-                current = current->getLeftNode();
+                current = current->getLeftChild();
             }
             else
             {
-                current = current->getRightNode();
+                current = current->getRightChild();
             }
         }
         return false;
